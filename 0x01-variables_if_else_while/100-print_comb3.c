@@ -6,25 +6,29 @@
  */
 int main(void)
 {
-	int w, y;
+	int i, j;
 
-	for (w = 48; w <= 58; w++)
+	i = 48;
+	j = 48;
+
+	while (i < 58)
 	{
-		for (y = 48; y <= 58; y++)
+		j = i + 1;
+		while (j < 58)
 		{
-			putchar(w);
-			putchar(y);
-			if (w == 57 || y == 57)
+			putchar(i);
+			putchar(j);
+
+			if (i < 56 || j < 57)
 			{
-				break;
+				putchar(44);
+				putchar(32);
 			}
-			else
-			{
-			putchar(',');
-			putchar(' ');
-			}
+			j++;
 		}
+		i++;
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
+
