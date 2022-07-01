@@ -8,13 +8,13 @@ int main(void)
 {
 	int w, y;
 
-	for (w = '0'; w <= '9'; w++)
+	for (w = 48; w <= 58; w++)
 	{
-		for (y = '0'; y <= '9'; y++)
+		for (y = 48; y <= 58; y++)
 		{
 			putchar(w);
 			putchar(y);
-			if (w == '9' && y == '9')
+			if (w == 57 && y == 57)
 			{
 				break;
 			}
