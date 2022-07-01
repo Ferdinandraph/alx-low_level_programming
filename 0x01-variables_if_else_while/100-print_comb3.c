@@ -15,9 +15,14 @@ int main(void)
 			putchar(w);
 			putchar(y);
 			if (w == '9' && y == '9')
+			{
 				break;
+			}
+			else
+			{
 			putchar(',');
 			putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
