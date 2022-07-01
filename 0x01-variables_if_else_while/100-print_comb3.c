@@ -14,7 +14,7 @@ int main(void)
 		{
 			putchar(w);
 			putchar(y);
-			if (w == 57 && y == 57)
+			if (w == 57 || y == 57)
 			{
 				break;
 			}
