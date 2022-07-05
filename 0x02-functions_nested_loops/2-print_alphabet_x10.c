@@ -4,7 +4,7 @@
  *
  * Return: void
  */
-void print_alphabet_x10(void)
+void 2-print_alphabet_x10(void)
 {
 	int counter = 0;
 
@@ -14,7 +14,7 @@ void print_alphabet_x10(void)
 
 		while (x <= 'z')
 		{
-			_putchar('x');
+			_putchar(x);
 			x++;
 		}
 		counter++;
