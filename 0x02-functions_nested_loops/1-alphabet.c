@@ -1,16 +1,14 @@
 #include "main.h"
-/*function prototype*/
-void _putchar(char c);
 /**
- * print_alphabet - print alphabet
+ * print_alphabet - print lowercase a-z
  *
  * Return: void
  */
 void print_alphabet(void)
 {
-	char x;
+	char x = 'a';
 
-	for (x = 'a'; x <= 'z'; x++)
+	while (x <= 'z')
 	{
 		_putchar(x);
 	}
