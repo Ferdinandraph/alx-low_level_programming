@@ -1,4 +1,6 @@
 #include "main.h"
+/*function prototype*/
+void print_alphabet(void);
 /**
  * print_alphabet - print alphabet
  *
