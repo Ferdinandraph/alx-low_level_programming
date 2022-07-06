@@ -1,5 +1,4 @@
 #include "stdio.h"
-void print_alphabet_x10(void);
 /**
  * print_alphabet_x10 - printing a-z *10
  *
@@ -22,6 +21,7 @@ void print_alphabet_x10(void)
 		putchar('\n');
 	}
 }
+void print_alphabet_x10(void);
 /**
  * main - entry point
  *
