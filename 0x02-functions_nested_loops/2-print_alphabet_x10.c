@@ -1,4 +1,5 @@
 #include "stdio.h"
+void print_alphabet_x10(void);
 /**
  * print_alphabet_x10 - printing a-z *10
  *
@@ -28,6 +29,6 @@ void print_alphabet_x10(void)
  */
 int main(void)
 {
-	print_alphabet_x10();
+	print_alphabet_x10(void);
 	return (0);
 }
