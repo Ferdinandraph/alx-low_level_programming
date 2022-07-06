@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdio.h"
 /**
  * print_alphabet_x10 - printing a-z *10
  *
@@ -20,4 +20,14 @@ void print_alphabet_x10(void)
 		counter++;
 		_putchar('\n');
 	}
+}
+/**
+ * main - entry point
+ *
+ * Return: 0
+ */
+int main(void)
+{
+	print_alphabet_x10();
+	return (0);
 }
