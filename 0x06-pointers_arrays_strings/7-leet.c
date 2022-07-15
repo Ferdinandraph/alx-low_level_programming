@@ -17,5 +17,5 @@ char *leet(char *str)
 			if (s[k] == str[i])
 				str[i] = s1[k];
 	}
-	return (0);
+	return (str);
 }
