@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * is_squre_root - determines the square root of
+ * is_square_root - determines the square root of
  * @j: an input value
  * Description: determines the square root
  * @i: input value
@@ -19,10 +19,10 @@ int is_square_root(int i, int j)
 	return (is_square_root(i, j + 1));
 }
 /**
- * sqrt_recursion - returns square root
+ * _sqrt_recursion - returns square root
  * @n: input size
  * Description: If n does not have a natural square root,
- * the function should return -1
+ * 
  * Return: returns the natural square root of a number
  */
 int _sqrt_recursion(int n)
