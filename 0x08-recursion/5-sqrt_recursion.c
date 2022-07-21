@@ -22,7 +22,7 @@ int is_square_root(int i, int j)
  * _sqrt_recursion - returns square root
  * @n: input size
  * Description: If n does not have a natural square root,
- * 
+ *
  * Return: returns the natural square root of a number
  */
 int _sqrt_recursion(int n)
