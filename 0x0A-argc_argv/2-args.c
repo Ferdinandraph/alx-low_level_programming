@@ -4,7 +4,7 @@
  * main - printing a arguments
  * @argc: counter arg
  * @argv: pointer string
- * return: 0
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
