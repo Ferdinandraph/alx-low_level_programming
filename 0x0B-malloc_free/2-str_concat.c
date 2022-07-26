@@ -9,7 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, len, limit;
+	unsigned int i, j, len, limit;
 	char *str;
 
 	if (s1 == NULL)
@@ -26,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 		free(str);
 		return (NULL);
 	}
-	for (len = 0; len <= i; len++)
+	for (len = 0; len < i; len++)
 		str[len] = s1[len];
 	limit = j;
 	for (j = 0; j <= limit; j++, len++)
