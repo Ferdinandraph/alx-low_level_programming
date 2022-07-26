@@ -10,10 +10,10 @@ char *_strdup(char *str)
 	char *duplicate_num;
 	int i = 0, length = 0;
 
-	if (str == NULL)
+	if (str == NULL || duplicate_num = NULL)
 		return (NULL);
 	duplicate_num = malloc(sizeof(char) * length + 1);
-	for (; str[i]; i++)
+	for (i = 0; str[i]; i++)
 	{
 		duplicate_num[i] = str[i];
 		length++;
