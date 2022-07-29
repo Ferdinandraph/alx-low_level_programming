@@ -7,14 +7,14 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i;
+	unsigned int i;
 	char *ptr;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	ptr = malloc((nmemb * size) * sizeof(int));
+	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; i <  nmemb * size; i++)
