@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
  * string_nconcat - concatinanting two strings
  * @s1: first parameter pointer
@@ -10,30 +8,26 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int x1, x2, i;
-	char *str;
+	char *p;
+	unsigned int size1 = 0, size2 = 0, i;
 
 	if (s1 == NULL)
-		x1 = 0;
-	if (s2 ==NULL)
-		x2 = 0;
-	for (x1 = 0; s1[x1]; x1++)
-		;
-	for (x2 = 0; s1[x2]; x2++)
-		;
-	if (x2 > n)
-		x2 = n;
-	str = malloc((x2 + x1 + 1) * sizeof(char));
-	if (str == NULL)
-		return (NULL);
-	for (i = 0; i < x1; i++)
-	{
-		str[i] = s1[i];
-	}
-	for (i = 0; i < x2; i++)
-	{
-		str[x1 + i] = s2[i];
-	}
-	str[x1 + x2] = '\0';
-	return (str);
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	while (s1[size1] != '\0')
+		size1++;
+	while (s2[size2] != '\0')
+		size2++;
+	if (n > size2)
+		n = size2;
+	p = malloc((size1 + n + 1) * sizeof(char));
+	if (p == NULL)
+		return (0);
+	for (i = 0; i < size1; i++)
+		p[i] = s1[i];
+	for (; i < (size1 + n); i++)
+		p[i] = s2[i - size1];
+	p[i] = '\0';
+	return (p);
 }
