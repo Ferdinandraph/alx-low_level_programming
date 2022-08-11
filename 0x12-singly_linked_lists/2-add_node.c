@@ -1,4 +1,4 @@
-#include "tests.h"
+#include "lists.h"
 /**
  * add_node - function that adds a new node at the beginning of a list_t list
  * @head: head of the link
@@ -12,7 +12,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
-		Return (NULL);
+		return (NULL);
 	new->str = strdup(str);
 	for (nchar = 0; str[nchar] != 0; nchar++)
 		;
