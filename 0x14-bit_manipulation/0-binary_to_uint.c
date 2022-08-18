@@ -12,13 +12,10 @@ unsigned int binary_to_uint(const char *b)
 	if (b[len] == '\0')
 		return (0);
 
-	for (; b[len]; len++)
+	for (; b[len] == '1' || b[len] == '0'; len++)
 	{
-		if (b[len] == '1' || b[len] == '0')
-		{
-			dex_val = dex_val << 1;
-			dex_val = dex_val + b[len] - '0';
-		}
+		dex_val = dex_val << 1;
+		dex_val = dex_val + b[len] - '0';
 	}
 	return (dex_val);
 }
